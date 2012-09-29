@@ -1,0 +1,8 @@
+= URL Rewriting =
+
+Les pages sont accessibles sous les extensions .php, .html et .htm.
+
+Le résultat est le même et les paramètres sont conservés.  
+
+Pour que cette fonction puisse fonctionner, il faut activer le **rewrite_module** de **Apache**.  
+Sous WAMP, il est activable dans WAMP > Apache > Modules Apache > rewrite_module.

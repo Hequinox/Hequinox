@@ -1,0 +1,4 @@
+AuthName "Hequinox protect"
+AuthType Basic
+AuthUserFile "admin/.htpasswd"
+Require valid-user

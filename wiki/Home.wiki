@@ -1,0 +1,11 @@
+= Bienvenue sur le wiki Hequinox =
+
+== Pages disponibles ==
+
+* [[URL Rewriting]]  
+* [[Architecture]]
+
+
+== Wiki features ==
+
+This wiki uses the [[http://www.wikicreole.org/|Creole]] syntax.

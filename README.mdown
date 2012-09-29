@@ -1,0 +1,142 @@
+# Projet Hequinox #
+
+Ce projet est le site internet de notre team : Hequinox.  
+La Team a été crée le 22 août 2012 avec Artpicre, Knyxe et Lestiar.
+
+Membres actuels (4) :
+
+-    *[Artpicre]("22-08-12")*					- Developer			: HTML, CSS, PHP, SQL, C
+-    *[Knyxe]("22-08-12")*						- Developer			: HTML, CSS, PHP, SQL, C, C++, Visual Basic.NET
+-    *[Lestiar]("22-08-12")*					- Developer			: HTML, CSS, PHP
+-    *[Oxymore (Cornflower)]("24-08-12")*		- Graphist			: HTML, CSS
+
+
+# A propos du site #
+
+Après une obtention plus générale de PHP, le site adoptera l'[architecture MVC](http://fr.wikipedia.org/wiki/Mod%C3%A8le-Vue-Contr%C3%B4leur "Modèle - Vue - Contrôleur").  
+Ce système sera géré par un contrôleur global à la racine du site (index.php).  
+L'accès aux autres pages sera gérée par des paramètres dans l'URL ($_GET).  
+Ces paramètres seront dissimulés grâce à l'URL rewriting (.htaccess).  
+
+Le site aura une hiérarchie comme suit : (avec quelques fichiers basiques)  
+
+	{Hequinox}
+	admin/
+	classes/
+	controleur/
+	forum/
+	modele/
+	vue/
+	.htaccess
+	design.css
+	footer.php
+	header.php
+	index.php
+	nav.php
+
+Personne ne pourra accéder au contenu des dossiers à partir du navigateur.  
+Un .htaccess sera crée dans tous les dossiers pour restreindre l'accès sauf pour le Forum.  
+Dans le dossier *vue/*, il n'y aura que des fichiers qui contiendront essentiellement du code HTML & CSS avec peu de code PHP qui seront des conditions et des affichages de données.  
+Le code sera très simple à comprendre.  
+
+
+## Sommaire ##
+
+Le site contiendra :  
+
+-    *les créations de la team*
+-    *un espace membres* 
+-    *un module de news* 
+-    *un chat direct* (Javascript - AJAX)
+-    *un forum* (optionnel)(PHP, SQL OU installation extérieure ex: phpBB)
+-    *un espace d'administration* 
+
+
+## Espace membres ##
+
+
+Les différents rangs qui peuvent être inclus sont : (du rang le moins élevé au plus élevé)  
+
+-    *les Visiteurs* (sans compte)
+-    *les Membres basiques*
+-    *les VIP* (nom à changer) : des Membres avec des privilèges (optionnel, si besoin de gain financiers)
+-    *les Rédacteurs* (pour les news)
+-    *les Modérateurs* (pour le forum & news)
+-    *les Administrateurs* (tous les pouvoirs)  
+
+S'il y a inclusion d'un Forum (voir ci-dessous), le compte sera le même entre le Forum et le site pour une meilleure ergonomie.  
+La gestion des données d'un Membre+ sera alors plus facile, les données modifiées seront appliquées et sur le Forum,
+ et sur le site.  
+
+L'espace membre est composé essentiellement de 4 pages :  
+
+-    *la page d'inscription*
+-    *la page de connexion*
+-    *le page du profil & édition du compte*
+-    *la page de la liste des membres*
+-    *les pages accessibles uniquement à certains rangs*  
+
+Les autres pages afficheront certaines actions ou messages en fonction du rang du client.  
+
+L'utilisation d'un même Pseudonyme sera possible (à discuter).  
+
+La page d'inscriptions demandera des informations de base comme le Pseudonyme, le Mot de passe et l'adresse Mail.  
+L'utilisateur sera invité ensuite à compléter ses informations dans l'espace de son profil.  
+
+La page de connexion comportera une redirection (s'il y a) à la page qu'a souhaité accéder le Visiteur.  
+
+La page du profil du Membre+ permettra de modifier, d'effacer, d'ajouter ses données hormis son Pseudonyme (à discuter).  
+
+La page de la liste des Membres+ affichera la date d'inscription, sa dernière activité, son rang, son site (à discuter).
+
+Les pages accessibles uniquement à cartains rangs sont les pages de l'espace d'administration, l'ajout de news, la liste des news, l'édition, la modification, la suppression des news.  
+
+
+## Module de news ##
+
+Un module de news sera intégré à la page principale (index) afin d'être averti de tous changements dès l'accès au site.  
+Une page qui classe les news de la plus récente à la plus ancienne sera crée. Une pagination de 10 (à discuter) news par page pour transmettre les pages avec performance et clarté.  
+
+**Concernant les droits :**  
+Sur chaque news, les Rédacteurs+ pourront : Modifier, Supprimer la news.  
+Chaque news pourra être commentée par les Membres+ mais les invités ne pourront le faire.  
+Une page de création de news ne sera accessible qu'aux Rédacteurs+.  
+
+Un page de liste des News permettra gérer facilement les News en les listant sans leur contenu.
+
+
+## Chat direct ##
+
+L'inclusion d'un channel IRC du serveur Epiknet (ou un autre) peut être envisageable, pour avoir un chat plus complet, stable et demandera moins de travail.  
+Ce canal sera aussi joignable à partir d'un client IRC.  
+
+Un minichat peut être crée afin d'avoir une communication basique du style :  
+
+	[Date] Pseudo : Message  
+					multi-lignes  
+	[Date] Pseudo : Message
+	[Date] Pseudo : Message
+
+Des connaissances en Javascript - AJAX sera requise afin de pouvoir recharger le chat automatiquement au lieu d'effectuer une actualisation périodique ou manuelle.
+
+
+## Forum ##
+
+Un Forum étant complexe et long à créer, l'installation d'un module externe est recommandé.  
+phpBB est un module complet avec gestion des droits, posts, portail et espace d'administration.  
+Il requiert une base de données.
+
+il est aussi possible de coder un Forum, mais il ne sera certainement pas aussi complet, sécurisé, et fonctionnel.  
+C'est d'ailleurs une grande organisation dont il faut faire preuve.
+
+
+## Espace d'administration ##
+
+L'espace d'administration permettra d'agir sur les Membres+.  
+Le rang de Modérateur+ pourra effectuer des modification basiques sur les Membres+ comme modifier des avatars choquants qui ne seraient pas tolérés.  
+L'action de les bannir pendant un temps donné ou sans durée est aussi possible.  
+
+Les Administrateurs pourront modifier tous types de données sur les Membres+, comme leur mot de passe, leur mail, leur pseudonyme.  
+Ils pourront aussi supprimer un Membre+.
+
+

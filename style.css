@@ -1,0 +1,257 @@
+/* body {
+		font-style: normal;
+		border-style: solid;
+		border-color: #444555;
+		border-width: thick;  
+		background-color: #558855; 
+		margin: 20px 20px 20px 20px; 
+		padding: 10px 10px 10px 10px; 
+}
+
+*/
+
+
+/* Design by Artpicre, imported by another site. */
+
+body {
+	width: auto;
+	height: 100%;
+	min-width: 960px;
+	margin: auto;
+	padding: 0 30px 10px 30px;;
+/*	background: rgba(240,240,240,1);*/
+	background: url(images/fond.png);
+}
+
+#server_name, #content, #right_side, footer {
+	background: rgba(255,255,255,0.5);
+	box-shadow: 5px 5px 10px gray;
+}
+
+#content, #right_side, footer {
+	border: solid;
+	border-radius: 10px;
+}
+
+
+/* Login menu */
+#login_menu {
+	position: fixed;
+	top: 0px;
+	right: 30px;
+	width: 325px;;
+	height: 90px;;
+	padding: 0 10px;
+	background: rgba(255,255,255,0.5);
+	z-index: 100;
+	border: 1px solid black;
+	border-top: none;
+	border-radius: 0 0 10px 10px;
+	box-shadow: 5px 5px 10px gray;
+}
+
+#login_menu p {
+	display: inline-block;
+	vertical-align: top;
+	margin: 5px 0;
+}
+
+#login_menu .connect_button {
+	display: inline-block;
+	vertical-align: top;
+}
+
+#login_menu .inscription {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 135px;
+	text-align: right;
+}
+
+/* Header */
+Header {
+/*
+	width: 100%;
+	margin-top: 100px;
+*/
+	width: auto; 
+	margin: auto;
+	margin-top: 20px;
+	text-align: center;
+	border: 1px solid black;
+	padding: 0 10px;
+	text-shadow: 5px 5px 3px lightBlue;
+	font-variant: small-caps;
+
+}
+
+#logo {
+	display: inline-block;
+	vertical-align: top;
+	width: 250px;
+}
+
+#logo img {
+	width: 250px;
+	border-radius: 25px;
+}
+
+/*#banner {
+	display: inline-block;
+	vertical-align: top;
+	background: rgba(0,0,0,1);
+	width: auto;
+	margin: auto;
+}*/
+
+#server_name {
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+/*	margin-left: 70px;*/
+	border: 1px solid black;
+	padding: 0 10px;
+	text-shadow: 5px 5px 3px lightBlue;
+	font-variant: small-caps;
+}
+
+/* Nav */
+nav {
+	width: auto;
+	margin: 20px 0 20px;
+	height: 50px;
+	border: 1px solid black;
+	border-radius: 10px;
+	background:	rgba(255,255,255,0.5);
+}
+
+nav a {
+	padding: 15px 10px;
+}
+
+nav a, nav a:visited {
+	text-decoration: none;
+	color: blue;
+}
+
+nav li:hover, nav li:active {
+	box-shadow: 3px 3px 5px gray inset;
+}
+
+#nav_main {
+	box-shadow: none;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	height: 100%;
+	padding: 0;
+	box-shadow: 5px 5px 10px gray;
+}
+
+nav ul li {
+	float: left;
+	position: relative;
+	margin: 0;
+	padding: 15px 0;
+	border-right: 1px solid gray;
+}
+
+nav ul li ul {
+	position: absolute;
+	left: -1px;
+	top: 50px;
+	display: none;
+	height: auto;
+	width: 300px;
+	padding-left: 0;
+	background: white;
+	border: 1px solid black;
+	border-top: none;
+	border-radius: 0 0 10px 10px;
+}
+
+nav ul li:hover ul {
+	display: block;
+}
+
+nav ul li ul li {
+	float: none;
+	border: none;
+	border-top: 1px solid black;
+	height: 25px;
+	padding: 5px 5px;
+}
+
+#navfirstelement {
+	border-radius: 10px 0 0 10px;
+}
+
+.last_li {
+	border-radius: 0 0 10px 10px;
+}
+
+/* Right_Side */
+#right_side {
+	float: right;
+	width: 260px;
+	min-height: 700px;
+	text-align: center;
+	padding: 0 2px 10px;
+}
+
+#right_side h3 {
+	font-weight: normal;
+}
+
+/* Content */
+#content {
+	min-width: 644px;
+	min-height: 700px;
+	margin: 0 280px 0 0;
+	padding: 0 10px 10px 10px;
+}
+
+/* Footer */
+footer {
+	font-size: 0.8em;
+}
+
+/* Article */
+article {
+	margin-bottom: 10px;
+	padding: 10px;
+	border: 1px solid black;
+}
+
+article h3 {
+	text-align: left;
+	margin: 0;
+	padding: 0 0 10px;
+}
+
+.articleinfo {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	margin: 0;
+	padding: 5px;
+}
+
+/* Others */
+h1, h2, h3 {
+	text-align: center;
+}
+
+img {
+	border: none;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+td, th {
+	border: 1px solid black;
+	padding: 5px 5px;
+}

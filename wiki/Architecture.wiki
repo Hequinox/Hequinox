@@ -1,0 +1,9 @@
+= Architecture =
+
+Le site est organisé sur l'archetecture **MVC** : Modèle - Vue - Contrôleur.
+
+Les Modèles permettent les accès aux données (fichiers, bases de données).
+
+Les Vues sont le code HTML/CSS qui s'affiche sur la page.
+
+Les Contrôleurs sont la partie qui contrôle quelle vue sera affichée, quelles données seront utilisées en prenant en compte les informations données par GET, POST, etc...
